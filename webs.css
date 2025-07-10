@@ -145,3 +145,67 @@
     font-size: 1rem;
     color: #aaa;
 }
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .nav-links {
+        margin-top: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+    
+    /* Hero Sections */
+    .hero, .design-hero, .discord-hero, .minecraft-hero {
+        padding: 3rem 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem !important;
+    }
+    
+    /* Cards/Plans */
+    .services-container, .plans-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .service-card, .plan-card {
+        width: 90%;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Formulario de soporte */
+    #support-form {
+        padding: 1rem;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes para móviles pequeños */
+    .logo {
+        font-size: 1.5rem;
+    }
+    
+    .discord-btn {
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+    }
+    
+    .price {
+        font-size: 1.3rem;
+    }
+}
