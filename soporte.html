@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte - Blokara Studios</title>
+    <link rel="stylesheet" href="soporte.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Menú Superior -->
+    <nav class="navbar">
+        <div class="logo">Blokara Studios</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="webs.html">Webs</a></li>
+            <li><a href="minecraft.html">Minecraft</a></li>
+            <li><a href="disenio.html">Diseño</a></li>
+            <li><a href="discord.html">Discord</a></li>
+            <li><a href="soporte.html" class="active">Soporte</a></li>
+        </ul>
+    </nav>
+
+    <!-- Formulario de Soporte -->
+    <section class="support-section">
+        <h1><i class="fas fa-headset"></i> Soporte Técnico</h1>
+        <p>¿Necesitas ayuda? Completa el formulario y te responderemos lo antes posible.</p>
+        
+        <form id="support-form">
+            <div class="form-group">
+                <label for="email">Correo electrónico*</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="name">Nombre*</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="lastname">Apellido (opcional)</label>
+                <input type="text" id="lastname" name="lastname">
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Asunto*</label>
+                <select id="subject" name="subject" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="Problema técnico">Problema técnico</option>
+                    <option value="Consulta sobre servicios">Consulta sobre servicios</option>
+                    <option value="Soporte post-venta">Soporte post-venta</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Descripción*</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">
+                <i class="fas fa-paper-plane"></i> Enviar reporte
+            </button>
+            
+            <div id="form-message" class="message"></div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.tiktok.com/@blokara_studio" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://x.com/blokarastudios" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://discord.com/channels/1372703053618217052/1372703054188511324" target="_blank"><i class="fab fa-discord"></i></a>
+        </div>
+        <p>&copy; 2025 Blokara Studios. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="soporte.js"></script>
+</body>
+</html>
